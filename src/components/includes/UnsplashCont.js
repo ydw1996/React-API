@@ -5,8 +5,6 @@ function UnsplashItem(props) {
     <li>
       <a href={`https://unsplash.com/photos/${props.image.id}`}>
         <img src={props.image.urls.regular} alt={props.image.id} />
-        <span>by "{props.image.user.name}"</span>
-        <span>{props.image.created_at}</span>
       </a>
     </li>
   );
@@ -15,9 +13,9 @@ function UnsplashItem(props) {
 function UnsplashCont(props) {
   console.log(props);
   return (
-    <div className="movie__cont">
+    <div className="image__cont">
       <div className="container">
-        <div className="movie__list">
+        <div className="image__list">
           <ul>
             {props.image.map((image) => (
               <UnsplashItem image={image} />

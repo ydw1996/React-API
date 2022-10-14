@@ -25,8 +25,27 @@
   color: var(--black);
 }
 
+// cont__sub
+.cont__sub {
+  padding: 0vmax 2% 2vmax;
+  font-size: 2.5vmax;
+  font-family: var(--main_font);
+  text-transform: uppercase;
+  line-height: 0.85;
+  color: var(--white);
+  background-color: var(--black);
+
+  em {
+    display: block;
+  }
+}
+.cont__sub.light {
+  background-color: var(--light_bg);
+  color: var(--black);
+}
+
 @media (max-width: 1200px) {
-  .cont__title {
+  .cont__sub {
     text-align: center;
     padding-bottom: 10vw;
   }
