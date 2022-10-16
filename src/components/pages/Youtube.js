@@ -15,7 +15,7 @@ function Youtube() {
 
   const search = (query) => {
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyA1HrDD8hqYby5sXWjNvg89AjmmppVNbRI&maxResults=28&type=video&query=${query}`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyA1HrDD8hqYby5sXWjNvg89AjmmppVNbRI&maxResults=28&type=video`
     )
       .then((response) => response.json())
       .then((result) => setYoutubes(result.items))

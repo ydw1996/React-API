@@ -1,3 +1,6 @@
+#main {
+  background-color: #000;
+}
 .youtube__cont {
   background-color: var(--black);
 }
@@ -16,6 +19,7 @@
       p {
         color: var(--white);
         font-family: var(--subKor_font);
+        margin-top: 0.5vw;
         padding-top: 10px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -75,19 +79,21 @@
 }
 
 /* 슬라이더 */
+.youtube_swiper {
+  position: relative;
 .swiper {
-  width: 100%;
+  margin-top: 2vw;
+  width: 90%;
   height: 100%;
   padding-bottom: 150px;
   background: #000;
+
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  padding: 20px;
-
-  /* Center slide text vertically */
+  font-size: 18px;  
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -102,12 +108,35 @@
   align-items: center;
 }
 
+.swiper-slide p {
+  margin-top: 1vw;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
 .swiper-slide a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.4em;
+  width: 90%;
+  height: 30%;
+
+  img {
+    background-color: rgba(23, 23, 23, 0.548);
+    padding: 0.5vw;
+    border-radius: 0.5em;
+    object-fit: cover;
+    box-shadow: 5px 10px rgba(23, 23, 23, 0.2);
+  }
+}
+
+.swiper-button-prev, .swiper-button-next{
+  filter: brightness(0) invert(1);
+  position: absolute;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
 }
 
 // 애니메이션
@@ -116,3 +145,4 @@
 //   opacity: 0;
 //   transform: translateY(100px);
 // }
+}

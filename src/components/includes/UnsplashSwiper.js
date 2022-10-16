@@ -6,20 +6,26 @@ import { Autoplay } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 
+import { EffectCoverflow,  } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 export default function UnsplashSwiper({swiper}) {
     if( swiper.length !== 0 ){
         return (
-            <>
+            <div class="Unsplash_swiper">
               <Swiper
                 slidesPerView={5}
-                spaceBetween={10}
+                spaceBetween={-50}
                 loop={true}
                 autoplay={
                     {delay: 3000,
                     disableOnInteraction: false}
                 }
-                modules={[Autoplay]}
+                navigation={true}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Autoplay, Navigation, Pagination]}
                 className="mySwiper"
               >
                 <SwiperSlide><a href={`https://unsplash.com/photos/${swiper[0].id}`}>
@@ -41,7 +47,7 @@ export default function UnsplashSwiper({swiper}) {
                 <SwiperSlide><a href={`https://unsplash.com/photos/${swiper[8].id}`}>
                 <img src={swiper[8].urls.regular} alt={swiper[8].id} /></a></SwiperSlide>
               </Swiper>
-            </>
+            </div>
           );
     }
 

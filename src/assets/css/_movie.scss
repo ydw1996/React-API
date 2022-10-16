@@ -68,12 +68,15 @@
   }
 }
 
+
 /* 슬라이더 */
+.movie_swiper {
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 80%;
   padding-bottom: 150px;
   background: #000;
+  margin-top: 2vw;
 }
 
 .swiper-slide {
@@ -98,9 +101,30 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   border-radius: 0.4em;
 }
 
+.swiper-pagination {
+  margin-bottom: 4vw;
+}
+
+.swiper-pagination-bullet {
+  background-color: #f0eeeb;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  filter: brightness(0) invert(1);
+  position: absolute;
+  top: 50%;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
+}
+}
