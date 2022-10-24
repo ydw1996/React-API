@@ -14,17 +14,17 @@ export default function YoutubeSwiper({swiper}) {
         return (
             <div class="youtube_swiper">
               <Swiper
-                slidesPerView={3}
+                slidesPerView={4}
                 spaceBetween={10}
                 loop={true}
                 autoplay={
                     {delay: 3000,
                     disableOnInteraction: false}
                 }
-                pagination={{
-                  type: "fraction",
-                }}
                 navigation={true}
+                pagination={{
+                  clickable: true,
+                }}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
               >

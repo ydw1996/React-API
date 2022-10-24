@@ -26,8 +26,7 @@ export default function UnsplashSwiper({swiper}) {
                   clickable: true,
                 }}
                 modules={[Autoplay, Navigation, Pagination]}
-                className="mySwiper"
-              >
+                className="mySwiper">
                 <SwiperSlide><a href={`https://unsplash.com/photos/${swiper[0].id}`}>
                 <img src={swiper[0].urls.regular} alt={swiper[0].id} /></a></SwiperSlide>
                 <SwiperSlide><a href={`https://unsplash.com/photos/${swiper[1].id}`}>

@@ -21,7 +21,6 @@ function Youtube() {
       .then((result) => setYoutubes(result.items))
       .catch((error) => console.log("error", error));
   };
-
   useEffect(() => {
     fetch(
       "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=popsong&key=AIzaSyA1HrDD8hqYby5sXWjNvg89AjmmppVNbRI&maxResults=28&type=video"
