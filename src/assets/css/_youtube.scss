@@ -71,13 +71,11 @@
     width: 40px;
   }
 }
-
 @media (max-width: 800px) {
   .youtube__list ul li {
     flex: 1 1 43%;
   }
 }
-
 /* 슬라이더 */
 .youtube_swiper {
   position: relative;
@@ -115,15 +113,15 @@
   height: 30%;
 
   img {
-    background-color: rgba(23, 23, 23, 0.548);
-    padding: 0.5vw;
+    background-color: #fff;
+    padding: 0.1vw;
     border-radius: 0.5em;
     object-fit: cover;
     box-shadow: 5px 10px rgba(23, 23, 23, 0.2);
   }
 }
 .swiper-pagination-bullet {
-  background-color: #f0eeeb;
+  background-color: #bfbfbf;
 }
 .swiper-pagination {
   margin-bottom: 4vw;
@@ -132,7 +130,6 @@
   filter: brightness(0) invert(1);
   position: absolute;
 }
-
 .swiper-button-prev {
   left: 0;
 }
@@ -146,4 +143,5 @@
 //   opacity: 0;
 //   transform: translateY(100px);
 // }
+
 }
